@@ -14,7 +14,7 @@ O projeto a ser desenvolvido é uma plataforma digital com a missão de intermed
 * Geisson Lucas Silva de Oliveira
 * Isabele Maria da Silva
 * Lorena Terenzi Alves
-* Marco
+* Marco Antonio de Oliveira Costa Júnior
 
 ## Orientador
 
