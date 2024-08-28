@@ -16,12 +16,21 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Desenvolver uma aplicação para educar e informar a comunidade e o comércio de grandes centros urbanos a respeito dos pontos de descarte e coleta de resíduos eletrônicos, e também que seja uma plataforma de conexão entre quem possui resíduos estragados ou obsoletos e promover uma destinação útil para os produtos que ainda possuem funcionalidade. Além disso, por meio destas conexões, fomentar a coleta seletiva para reverter em benefício para o Município, prevenir a saúde da população local e o meio ambiente.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver uma aplicação de gerenciamento online para resíduos eletrônicos que facilite a coleta, reciclagem e descarte responsável desses materiais, promovendo a conscientização ambiental e a sustentabilidade. Este objetivo envolve a criação de uma plataforma web que permite aos usuários:
+
+    • Educar a população quanto à preservação do meio ambiente quanto ao descarte de lixo eletrônico.
+    • Cadastro e localização de pontos de coleta de resíduos eletrônicos próximos às suas áreas de residência ou trabalho.
+    • Doação de eletrônicos.
+    • Redirecionar produtos doados que possuem funcionalidade para setores do órgão público.	
+    • Incentivar a população a fazer o descarte consciente com o sistema de Recompensas. Isso será feito através da fidelização 
+    no programa de pontos para as pessoas físicas dando descontos no IPTU, Ifood, Dotz, e incentivo fiscal para as empresas que 
+    recolhem ISS quanto à doação de celulares, tablets, notebooks e computadores.
+    • Divulgação dos benefícios com as doações efetivadas como forma de incentivo, haja vista que os eletrônicos em bom estado de 
+    conservação serão reaproveitados pela Prefeitura em seus setores internos, evitando, assim, gastos com a compra de produtos.
+
+
 
 ## Justificativa
 
