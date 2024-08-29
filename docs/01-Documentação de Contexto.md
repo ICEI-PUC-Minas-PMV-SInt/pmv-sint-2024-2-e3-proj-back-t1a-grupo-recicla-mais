@@ -1,19 +1,24 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Resíduos eletroeletrônicos, muitas vezes denominados lixo eletrônico ou e-lixo, constituem uma categoria específica de resíduos sólidos que engloba produtos eletrônicos para descarte. Engana-se quem pensa que o lixo eletrônico começou a ser um problema apenas no século XXI. Entre os anos de 1929 e 1930, durante a Grande Depressão, as empresas produziam eletroeletrônicos em série de modo a incentivar o consumo com o objetivo de recuperar a economia daqueles países, tendo os governantes como os grandes apoiadores.
+
+O rápido avanço da tecnologia e a chamada “obsolescência planejada”, que é o processo pelo qual produtos são fabricados com o propósito de apresentarem algum tipo de limitação em um tempo predeterminado, fazendo com que se tornem obsoletos, impulsionando assim o consumo, contribuíram significativamente para o aumento no surgimento de resíduos eletrônicos.
+
+Nas últimas décadas, vivenciamos uma realidade ainda mais chocante, pois todos os anos criam-se novos produtos, aperfeiçoamentos e/ou atualizações dos aparelhos eletrônicos, o que resulta em uma crescente geração de resíduos eletroeletrônicos em todo o mundo ainda que os aparelhos estejam em perfeito estado de funcionamento, porém obsoletos perante a nova tecnologia da época, passaram a ser igualmente descartados de forma não controlada no meio ambiente.
+
+Além disso, o crescente volume de resíduos eletrônicos produzidos promove uma poluição tecnológica de grande proporção, já que em muitos lugares não há o descarte correto desses materiais. Dentre as substâncias encontradas neste tipo de resíduo estão cádmio, chumbo, óxido de chumbo, antimônio, níquel ou mercúrio, portanto, substâncias perigosas que podem representar riscos significativos para a saúde humana e o meio ambiente se não forem gerenciadas adequadamente.
+
+Apesar disso, há também a presença de ouro na composição de alguns e-lixo, o que indica ser também bastante viável financeiramente o descarte correto e a coleta destes materiais.
+
+No que diz respeito ao lado ambiental, há preocupações relevantes sobre o descarte inadequado desses produtos, esse lixo tóxico, produzido por materiais de origem inorgânica, os quais provocam grandes desequilíbrios nos ecossistemas, contaminando rios, lagos, mares e, até mesmo, com emissão de gases atmosféricos. Por ainda não ser possível reverter o atual modelo de produção para diminuir a quantidade de resíduos eletrônicos, o ideal e recomendado é um descarte consciente e direcionado.
+
+Com isso, tornou-se uma necessidade atual a preservação do meio ambiente por meio de práticas sustentáveis, como também entender e educar a população sobre resíduos eletroeletrônicos, fazendo com que assim possamos garantir um futuro mais limpo e seguro para as gerações futuras.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Como funciona o processo de descarte de resíduos eletrônicos nos grandes centros urbanos e o que pode ser feito para aumentar e aprimorar a coleta seletiva para ser utilizada nos setores públicos carentes de materiais eletrônicos, prevenir a saúde da população local e também o meio ambiente?
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
+Para resolver esse problema, pensamos em um projeto que irá apresentar alguns pontos de coleta de reciclagem eletrônico para as pilhas/baterias nas redes de empresas parceiras e também o agendamento para coleta dos celulares, tablets, notebooks e computadores, que será realizada pela Prefeitura. O projeto será elaborado com base em duas vertentes: o descarte de produtos eletrônicos, pilhas e baterias que não possuem mais utilidade e os materiais que ainda funcionam perfeitamente ou com algumas avarias e que podem ser aproveitados pelo órgão público.
 ## Objetivos
 
 Desenvolver uma aplicação para educar e informar a comunidade e o comércio de grandes centros urbanos a respeito dos pontos de descarte e coleta de resíduos eletrônicos, e também que seja uma plataforma de conexão entre quem possui resíduos estragados ou obsoletos e promover uma destinação útil para os produtos que ainda possuem funcionalidade. Além disso, por meio destas conexões, fomentar a coleta seletiva para reverter em benefício para o Município, prevenir a saúde da população local e o meio ambiente.
