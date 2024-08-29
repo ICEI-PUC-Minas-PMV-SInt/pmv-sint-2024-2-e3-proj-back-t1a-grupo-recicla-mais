@@ -32,17 +32,35 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
+|    ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve permitir o cadastro de usuário. (Todos os Usuários) | Alta 
+|RF-002| O sistema deve fornecer recomendações de pontos de coleta de lixo eletrônico.(João Oliveira)| Média | 
+|RF-003| O sistema deve permitir o agendamento de coleta de lixo eletrônico.(João Oliveira)  | Alta |
+|RF-004| O sistema deve permitir o cadastro de materiais que serão doados por meio do agendamento de coleta.(João Oliveira) | Alta |
+|RF-005| O sistema deve emitir um aviso informando que o agendamento foi realizado com sucesso.(João Oliveira) | Baixa |
+|RF-006| O sistema deve enviar email/mensagem no whatsapp com a confirmação e os detalhes do agendamento.(João Oliveira) | Baixa |
+|RF-007| O sistema deve ter um portal de noticias para informação dos usuários.(Ana Silveira) | Alta |
+|RF-008| O sistema deve permitir a doação de equipamentos com funcionamento considerado normal.(Ana Silveira) | Alta |
+|RF-009| O sistema deve exibir o histórico de doações e/ou descartes feitos pelo usuário.(Ana Silveira) | Alta |
+|RF-010| O sistema deve exibir estatísticas das doações efetuadas nos meses anteriores, mês atual, nos anos anteriores e o acumulado do ano atual.(Ana Silveira) | Média |
+|RF-011| O sistema deve permitir o cadastro de empresas para realizar ou receber doações.(Leonardo Soares) | Alta |
+|RF-012| O sistema deve permitir que o usuário crie um aviso de intenção dereceber doações.(Carlos Nogueira) | Alta |
+|RF-013| O sistema deve permitir o cadastro de empresas parceiras que terão pontos de coleta de pilhas e baterias.(Amanda Alves) | Alta |
+|RF-014| O sistema deve permitir a visualização de todas as empresas parceiras que tem pontos de coleta de pilhas e baterias.(João Oliveira) | Alta |
+|RF-015| O sistema deve exibir para o usuário as datas e horários disponíveis para fazer doações e/ou coletas de lixo eletrônico.(João Oliveira) | Alta |
+|RF-016| O sistema deve exibir permitir a visualização do perfil de usuário.(Todos os usuários) | Alta |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve atender aos requisitos básicos de acessibilidade do Guia WCAG, nível A. | Média | 
+|RNF-002| O sistema deve ser responsivo e permitir o acesso via celulares e tablets. | Média | 
+|RNF-003| O sistema deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-004| O sistema deve estar disponível 24 horas por dia, 7 dias por semana |  Média |
+|RNF-005| O sistema deve ser compatível com navegadores Google Chrome, Firefox, Microsoft Edge. |  Alta |
+|RNF-006| O sistema deve ser compatível com navegadores Google Chrome, Firefox, Microsoft Edge. |  Alta |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
