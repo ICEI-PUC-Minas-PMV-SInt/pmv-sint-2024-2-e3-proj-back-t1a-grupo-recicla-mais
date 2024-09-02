@@ -94,7 +94,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](img/UMLusecases.png)
+![Diagrama de Casos de Uso](img/UMLusecase.1.png)
 
  **Links Úteis**:
 > - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
