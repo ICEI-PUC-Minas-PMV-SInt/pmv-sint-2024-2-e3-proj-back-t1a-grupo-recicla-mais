@@ -8,7 +8,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](img/UMLclass.png)
+![Diagrama de Classes](img/UMLclass.1.png)
 
 > **Links Úteis**:
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
