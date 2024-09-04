@@ -8,7 +8,7 @@ Nas últimas décadas, vivenciamos uma realidade ainda mais chocante, pois todos
 
 Além disso, o crescente volume de resíduos eletrônicos produzidos promove uma poluição tecnológica de grande proporção, já que em muitos lugares não há o descarte correto desses materiais. Dentre as substâncias encontradas neste tipo de resíduo estão cádmio, chumbo, óxido de chumbo, antimônio, níquel ou mercúrio, portanto, substâncias perigosas que podem representar riscos significativos para a saúde humana e o meio ambiente se não forem gerenciadas adequadamente.
 
-Apesar disso, há também a presença de ouro na composição de alguns e-lixo, o que indica ser também bastante viável financeiramente o descarte correto e a coleta destes materiais.
+Apesar disso, há também a presença de ouro na composição de alguns resíduos, o que indica ser também bastante viável financeiramente o descarte correto e a coleta destes materiais.
 
 No que diz respeito ao lado ambiental, há preocupações relevantes sobre o descarte inadequado desses produtos, esse lixo tóxico, produzido por materiais de origem inorgânica, os quais provocam grandes desequilíbrios nos ecossistemas, contaminando rios, lagos, mares e, até mesmo, com emissão de gases atmosféricos. Por ainda não ser possível reverter o atual modelo de produção para diminuir a quantidade de resíduos eletrônicos, o ideal e recomendado é um descarte consciente e direcionado.
 
