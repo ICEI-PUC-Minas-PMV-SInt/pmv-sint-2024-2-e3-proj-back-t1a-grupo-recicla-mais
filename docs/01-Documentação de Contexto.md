@@ -39,22 +39,17 @@ Desenvolver uma aplicação de gerenciamento online para resíduos eletrônicos 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A reciclagem de lixo eletrônico no Brasil é um desafio premente e inadiável que exige a participação das indústrias, empresas de reciclagem e consumidores. Segundo relatório publicado pela Organização das Nações Unidas em fevereiro de 2022, apenas 3% do lixo eletrônico produzido na América Latina é descartado corretamente. Os outros 97% não são monitorados. Ainda, o descarte incorreto na região aumentou em 49% no período de 2010 a 2019. Em termos globais, o Brasil ocupa a quinta posição entre os países que mais produzem lixo eletrônico no mundo, gerando em torno de 2 milhões de toneladas desse tipo de lixo por ano. O país é superado apenas pela China, Estados Unidos, Índia e Japão.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Além dos danos ambientais, o descarte incorreto do lixo eletrônico também resulta em um alto prejuízo econômico. Cada quilo de material eletrônico reciclado pode gerar de R$0,40 a R$4,00 dependendo do tipo de resíduo. Se o Brasil reciclasse todo o lixo eletrônico que produz, o ganho econômico estaria na faixa de R$800 milhões a R$8 bilhões, o que tornaria o segmento um dos mais importantes da economia.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O problema do descarte incorreto de lixo eletrônico também envolve diretamente o consumidor, que desempenha papel fundamental nessa logística. Os hábitos de consumo, moldados pelo consumismo exacerbado de novos aparelhos tecnológicos, resulta em um excesso de descarte de aparelhos eletrônicos. É necessário conscientizar os consumidores não apenas quanto ao descarte incorreto, mas também quanto ao consumo de materiais de marcas mais duráveis e que ofereçam melhores serviços de reparo, permitindo que aparelhos eletrônicos sejam utilizados por mais tempo.
+
+Ainda, é necessário conscientizar as pessoas a respeito da Logística Reversa, regulamentada pelo Decreto nº 10.936/2022, que se destina a viabilizar a coleta e a restituição de resíduos sólidos ao setor empresarial, permitindo o reaproveitamento desses resíduos. 
+
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo deste projeto são pessoas preocupadas com o descarte responsável de resíduos eletroeletrônicos, bem como os setores do órgão público que podem se beneficiar com a reutilização desses materiais.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Desta forma, estabeleceu-se como público-alvo desta solução pessoas que possuem produtos eletroeletrônicos, como pilhas/baterias, tablets, notebooks, computadores e celulares, que se tornaram obsoletos ou apresentam algum defeito e que tenham interesse em descartar esses produtos de forma consciente.
