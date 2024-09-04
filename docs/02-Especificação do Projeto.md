@@ -50,8 +50,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-014| O sistema deve permitir a visualização de todas as empresas parceiras que tem pontos de coleta de pilhas e baterias.(João Oliveira) | Alta |
 |RF-015| O sistema deve exibir para o usuário as datas e horários disponíveis para fazer doações e/ou coletas de lixo eletrônico.(João Oliveira) | Alta |
 |RF-016| O sistema deve exibir permitir a visualização do perfil de usuário.(Todos os usuários) | Alta |
+|RF-017| O sistema deve permitir que o usuário filtre notícias por categoria, hashtags ou palavras chaves.(Todos os usuários) | Alta |
+|RF-018| O sistema deve exibir uma página de dúvidas frequêntes que os usuários possam ter em relação à plataforma.(Todos os usuários) | Média |
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
@@ -62,21 +64,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| O sistema deve ser compatível com navegadores Google Chrome, Firefox, Microsoft Edge. |  Alta |
 |RNF-006| O sistema deve ser compatível com navegadores Google Chrome, Firefox, Microsoft Edge. |  Alta |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
@@ -86,11 +73,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |01| A aplicação  deve atender às eventuais normas e leis municipais que se apliquem ao projeto           |
 |02| A aplicação deve atender às especificações estabelecidas no contrato com a prefeitura                |
 |03| A aplicação deve ser construida utilizando as principais tecnologias utilizadas na Web               |
-|04| A equipe não deve subcontratar o desenvolvimento do trabalho                                         |
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|04| A equipe não deve subcontratar o desenvolvimento do trabalho                                       |
 
 ## Diagrama de Casos de Uso
 
