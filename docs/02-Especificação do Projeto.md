@@ -79,14 +79,14 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+|01| A aplicação  deve atender às eventuais normas e leis municipais que se apliquem ao projeto           |
+|02| A aplicação deve atender às especificações estabelecidas no contrato com a prefeitura                |
+|03| A aplicação deve ser construida utilizando as principais tecnologias utilizadas na Web               |
+|04| A equipe não deve subcontratar o desenvolvimento do trabalho                                         |
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
