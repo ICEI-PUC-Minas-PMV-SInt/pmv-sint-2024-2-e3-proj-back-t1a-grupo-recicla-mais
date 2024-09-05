@@ -1,26 +1,15 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
-
-## Relação de Ambientes de Trabalho
-
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+O projeto foi elaborado por meio da utilização de várias ferramentas para auxiliar na implementação do código-fonte, design de interface, comunicação e gestão do time. A seguir, estarão listadas as tecnologias e procedimentos pertinentes ao projeto e suas descrições.
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [Github](https://github.com) foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
@@ -28,60 +17,65 @@ etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
 - `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+- `enhancement`: uma nova funcionalidade precisa ser introduzida ou melhorada
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+O projeto foi configurado no GitHub por meio de um repositório template contendo a estrutura básica de diretórios referentes a: documentação (**docs**), apresentação e descrição do projeto (**presentation**) e código-fonte (**src**). 
 
-> **Links Úteis**:
-> - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+No que diz respeito às **branches**, elas são manipuladas da seguinte forma: Todos os **commits** (desenvolvimento e testes ) são feito na  branch `dev` . Após se ter disponível um pacote de funcionalidades mínimas testadas o time efetua o **merge** do conteúdo para a branch `main`, onde estará o código-fonte do projeto em pleno funcionamento.
 
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A divisão de papeis do time de desenvolvimento foi feito baseado no método ágil SCRUM.
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+- Scrum Master: 
+  - Andressa
+- Product Owner: 
+  - Lorena
+- Equipe de desenvolvimento:
+  - Geisson
+  - Andressa
+  - Lorena
+  - Isabele
+  - Marco
+- Equipe de design:
+  - Geisson
+  - Andressa
+  - Lorena
+  - Isabele
+  - Marco
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organização e distribuição das tarefas entre os integrantes a equipe utilizou o GitHub Projects com o sistema de organização e gestão do trabalho [Kamban](https://github.com/orgs/ICEI-PUC-Minas-PMV-SInt/projects/27/views/2). A seguir, estão listadas e descritas as categorias definidas para controlar o status das tarefas de trabalho e também a imagem do workflow.
+
+- **To Do**: Representa o Backlog e contém as atividades que estão definidas para serem iniciadas.
+- **In progress**: Lista de atividades em processo de implementação e que não estão finalizadas.
+
+- **Blocked**: Lista de atividades que por algum problema estão impedidas de serem prosseguidas ou concluídas.
+- **Done**: Tarefas que passaram pelos testes de controle de qualidade e estão prontos para ser entregues ao usuário. 
+
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas empregadas no desenvolvimento do projeto e sua função de uso estão relacionadas na tabela a seguir.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+| Ferramenta                                                   | Função                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Visual Studio Code](https://code.visualstudio.com/)         | Editor de código-fonte                                       |
+| [Git](https://code.visualstudio.com/)/[GitHub](https://code.visualstudio.com/) | Controle de versionamento de código-fonte                    |
+| [GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-SInt/projects/27/views/2) | Organização e gestão do trabalho                             |
+| [MS Teams](https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software) | Comunicação do time                                          |
+| [Figma](https://www.figma.com/)                              | Design, prototipação de wireframes, userflow e desenvolvimento de diagramas |
+| [MarvelApp](https://marvelapp.com/)                          | Criação do fluxo interativo dos wireframes                   |
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+O editor de código Visual Studio Code foi escolhido pois possui uma integração com o sistema de versão, integração com extensões que auxiliam na produtividade de código, além de ser uma aplicação leve e amplamente utilizada e já consolidada no mercado de desenvolvimento de software.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Para o versionamento de código-fonte o Git foi adotado, pois é o maior sistema de controle de versões distribuído que existe e possui extensa documentação para treinamento de uso no time de desenvolvedores. 
+
+O GitHub, por sua vez, é a maior plataforma de hospedagem de repositórios Git utilizado no mercado, possui uma interface intuitiva e muito eficiente para a visualização dos arquivos de código.  Além disso, ele oferece o GitHub Projects que é uma funcionalidade do GitHub capaz de dar muita flexibilidade e eficiência na organização e gestão das tarefas de desenvolvimento, fornecendo uma interface bem informativa sobre a distribuição e cronograma da sprint.
+
+A comunicação do time o Microsoft Teams foi a ferramenta utilizada devido possibilidade de agendar e criar reuniões de forma muito simples e com muita qualidade de transmissão de vídeo. Além disso, a ferramenta é multi-plataforma, o que permite que seja usado tanto em desktop quanto em mobile. 
+
+Para o desenvolvimento dos wireframes o Figma foi escolhido, pois possui todos os recursos necessários para o design dos layouts. Também foi utilizado o MarvelApp, que permite a criação do fluxo interativo de wireframes de forma muito prática.
