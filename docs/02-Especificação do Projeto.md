@@ -77,5 +77,5 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](img/UMLusecase.2.png)
+![Diagrama de Casos de Uso](img/UMLusecase.png)
 
