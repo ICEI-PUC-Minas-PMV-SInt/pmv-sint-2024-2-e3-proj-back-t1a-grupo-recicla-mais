@@ -1,0 +1,341 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\M0\\source\\repos\\Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\administrador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\administrador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\controllers\\orgaopublicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\controllers\\orgaopublicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\controllers\\municipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\controllers\\municipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\orgaopublico\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\orgaopublico\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\municipe\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\municipe\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresa\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresa\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresa\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresa\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresa\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresa\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresa\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresa\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\views\\empresaview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\views\\empresaview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|c:\\users\\m0\\source\\repos\\application\\application\\migrations\\20241010150339_m0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{857DCE01-DD68-42E6-A5E4-9C00A401F5B9}|Application\\Application.csproj|solutionrelative:application\\migrations\\20241010150339_m0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Administrador\\Create.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Administrador\\Create.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Administrador\\Create.cshtml",
+              "RelativeToolTip": "Application\\Views\\Administrador\\Create.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T16:05:59.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "Application\\Controllers\\AdministradorController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:04:31.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\OrgaoPublico\\Create.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\OrgaoPublico\\Create.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\OrgaoPublico\\Create.cshtml",
+              "RelativeToolTip": "Application\\Views\\OrgaoPublico\\Create.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:53:22.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrgaoPublicoController.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\OrgaoPublicoController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\OrgaoPublicoController.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\OrgaoPublicoController.cs",
+              "RelativeToolTip": "Application\\Controllers\\OrgaoPublicoController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:53:17.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MunicipeController.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\MunicipeController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\MunicipeController.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\MunicipeController.cs",
+              "RelativeToolTip": "Application\\Controllers\\MunicipeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:45:35.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Index.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Empresa\\Index.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Index.cshtml",
+              "RelativeToolTip": "Application\\Views\\Empresa\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:05:33.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Empresa\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Edit.cshtml",
+              "RelativeToolTip": "Application\\Views\\Empresa\\Edit.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:05:17.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Details.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Empresa\\Details.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Details.cshtml",
+              "RelativeToolTip": "Application\\Views\\Empresa\\Details.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:05:08.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Empresa\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Delete.cshtml",
+              "RelativeToolTip": "Application\\Views\\Empresa\\Delete.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:04:52.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20241010150339_m0.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Migrations\\20241010150339_m0.cs",
+              "RelativeDocumentMoniker": "Application\\Migrations\\20241010150339_m0.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Migrations\\20241010150339_m0.cs",
+              "RelativeToolTip": "Application\\Migrations\\20241010150339_m0.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:03:40.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Create.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Empresa\\Create.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Empresa\\Create.cshtml",
+              "RelativeToolTip": "Application\\Views\\Empresa\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:00:53.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmpresaView.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\EmpresaView.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\EmpresaView.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\EmpresaView.cshtml",
+              "RelativeToolTip": "Application\\Views\\EmpresaView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:00:46.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "Application\\Controllers\\EmpresaController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:00:17.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Application\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:52:46.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\Usuario.cs",
+              "RelativeToolTip": "Application\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:46:23.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Municipe\\Create.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Municipe\\Create.cshtml",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Views\\Municipe\\Create.cshtml",
+              "RelativeToolTip": "Application\\Views\\Municipe\\Create.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:47:12.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Application\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:51:43.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\appsettings.json",
+              "RelativeDocumentMoniker": "Application\\appsettings.json",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\appsettings.json",
+              "RelativeToolTip": "Application\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-10T14:50:47.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Program.cs",
+              "RelativeDocumentMoniker": "Application\\Program.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Program.cs",
+              "RelativeToolTip": "Application\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:50:40.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\M0\\source\\repos\\Application\\Application\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Application\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:50:03.64Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
