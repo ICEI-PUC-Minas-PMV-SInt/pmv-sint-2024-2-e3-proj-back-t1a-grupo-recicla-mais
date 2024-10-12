@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\views\\beneficiomodels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:views\\beneficiomodels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\views\\beneficiomodels\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:views\\beneficiomodels\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\controllers\\beneficiomodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:controllers\\beneficiomodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\models\\beneficiomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:models\\beneficiomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\migrations\\20241012210320_criandotabelabeneficio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:migrations\\20241012210320_criandotabelabeneficio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|c:\\users\\wtinfo pc\\desktop\\eixo 3puc isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcisabele\\beneficio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C8E38D7-F9F4-4DD1-883A-E28A8622077C}|Beneficio.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\BeneficioModels\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\BeneficioModels\\Index.cshtml",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\BeneficioModels\\Index.cshtml",
+              "RelativeToolTip": "Views\\BeneficioModels\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T21:10:53.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\BeneficioModels\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\BeneficioModels\\Create.cshtml",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\BeneficioModels\\Create.cshtml",
+              "RelativeToolTip": "Views\\BeneficioModels\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T21:10:50.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T21:06:44.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BeneficioModelsController.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Controllers\\BeneficioModelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BeneficioModelsController.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Controllers\\BeneficioModelsController.cs",
+              "RelativeToolTip": "Controllers\\BeneficioModelsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T21:06:05.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241012210320_criandotabelabeneficio.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Migrations\\20241012210320_criandotabelabeneficio.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241012210320_criandotabelabeneficio.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Migrations\\20241012210320_criandotabelabeneficio.cs",
+              "RelativeToolTip": "Migrations\\20241012210320_criandotabelabeneficio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T21:03:20.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T20:59:13.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BeneficioModel.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\BeneficioModel.cs",
+              "RelativeDocumentMoniker": "Models\\BeneficioModel.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\BeneficioModel.cs",
+              "RelativeToolTip": "Models\\BeneficioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T20:58:30.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T20:22:38.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T20:19:33.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\WTINFO PC\\Desktop\\Eixo 3Puc Isa\\pmv-sint-2024-2-e3-proj-back-t1a-grupo-recicla-mais\\src\\srcIsabele\\Beneficio\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-12T20:10:04.22Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
