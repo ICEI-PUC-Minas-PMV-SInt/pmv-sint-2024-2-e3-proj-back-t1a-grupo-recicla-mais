@@ -8,7 +8,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](img/UMLclass.png)
+![Diagrama de Classes](img/UMLclass2.png)
 
 
 
