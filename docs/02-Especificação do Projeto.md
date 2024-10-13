@@ -52,6 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-016| O sistema deve exibir permitir a visualização do perfil de usuário.(Todos os usuários) | Alta |
 |RF-017| O sistema deve permitir que o usuário filtre notícias por categoria, hashtags ou palavras chaves.(Todos os usuários) | Alta |
 |RF-018| O sistema deve exibir uma página de dúvidas frequêntes que os usuários possam ter em relação à plataforma.(Todos os usuários) | Média |
+|RF-019| O sistema deve permitir a geração e visualização de relatórios de itens coletados e endereços agendados.(Ana Silveira) | Média |
 
 ### Requisitos Não Funcionais
 
