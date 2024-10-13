@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Agendamentos] (
+    [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [Data] DATETIME2(7) NOT NULL,
+    [Pontuacao] INT NOT NULL,
+    [Estado] INT NOT NULL,
+    [Cidade] NVARCHAR(20) NOT NULL,
+    [Bairro] NVARCHAR(20) NOT NULL,
+    [Rua] NVARCHAR(20) NOT NULL,
+    [NumeroCasa] INT NOT NULL,
+    [Cep] NVARCHAR(MAX) NOT NULL
+);
+

@@ -1,0 +1,81 @@
+
+  
+INSERT INTO [dbo].[Agendamentos]
+           ([Data]
+           ,[Pontuacao]
+           ,[Estado]
+           ,[Cidade]
+           ,[Bairro]
+           ,[Rua]
+           ,[NumeroCasa]
+           ,[Cep])
+     VALUES
+           ('2024-10-15',      
+           10,                
+           1,                 
+           'Belo Horizonte',  
+           'Centro',          
+           'Avenida Afonso Pena', 
+           123,               
+           '30130-000')      
+GO
+
+INSERT INTO [dbo].[Agendamentos]
+           ([Data]
+           ,[Pontuacao]
+           ,[Estado]
+           ,[Cidade]
+           ,[Bairro]
+           ,[Rua]
+           ,[NumeroCasa]
+           ,[Cep])
+     VALUES
+           ('2024-11-01',      
+           20,               
+           2,                
+           'São Paulo',       
+           'Mooca',           
+           'Rua da Mooca',   
+           456,             
+           '03105-000') 
+GO
+
+
+UPDATE [dbo].[Agendamentos]
+   SET [Data] = '2024-10-20',         
+       [Pontuacao] = 15,              
+       [Estado] = 2,                    
+       [Cidade] = 'São Paulo',          
+       [Bairro] = 'Jardins',           
+       [Rua] = 'Rua da Consolação',    
+       [NumeroCasa] = 456,             
+       [Cep] = '01416-001'             
+ WHERE [Id] = 1                       
+GO
+
+SELECT [Id]
+      ,[Data]
+      ,[Pontuacao]
+      ,[Estado]
+      ,[Cidade]
+      ,[Bairro]
+      ,[Rua]
+      ,[NumeroCasa]
+      ,[Cep]
+  FROM [dbo].[Agendamentos]
+
+
+DELETE FROM [dbo].[Agendamentos]
+      WHERE Id = 1
+GO
+
+SELECT [Id]
+      ,[Data]
+      ,[Pontuacao]
+      ,[Estado]
+      ,[Cidade]
+      ,[Bairro]
+      ,[Rua]
+      ,[NumeroCasa]
+      ,[Cep]
+  FROM [dbo].[Agendamentos]
