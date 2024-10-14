@@ -97,33 +97,22 @@ Foi iniciado algumas aulas do microfundamento de desenvolvimento web Beck-end. E
 ![alt text](image-3.png)
 
 
+## Responsavel: Geisson Lucas de Oliveira
+### Tela: Agendamento
+Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os exemplos abordados pelo professor até a sessão de estudo *UNIDADE 2 - Tema 1 - Desenvolvimento de novas funcionalidades.* Iniciei a criação e estruturação da minha tela de Agendamento de Coleta, conforme imagens que seguem abaixo.
 
+--Listar todos os Agendamentos
+![image](../src/srcGeisson/img/AgendamentoIndex.png)
 
+--Criar Agendamento
+![image](../src/srcGeisson/img/AgendamentoCriar.png)
 
+--Ver detalhes do Agendamento
+![image](../src/srcGeisson/img/AgendamentoDetalhes.png)
 
+--Editar Agendamentos
+![image](../src/srcGeisson/img/AgendamentoEditar.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
-
-
-
-
-
-
-
->>>>>>> 38466cc8bd28c147734d67a49c25d6cc750fd376
+--Deletar Agendamento
+![image](../src/srcGeisson/img/AgendamentoDeletar.png)
 
