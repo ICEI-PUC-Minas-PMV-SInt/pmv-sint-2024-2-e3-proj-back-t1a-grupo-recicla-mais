@@ -68,6 +68,8 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 ### Visualização de Usuários Criados no BD
 ![image](img/usercap5.PNG)
 
+### FORM de Criação
+![image](img/usercap3.PNG)
 
 
 
@@ -77,7 +79,7 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 
 ## Responsavel: Isabele Maria Da Silva 
 
-<<<<<<< HEAD
+
 Foi iniciado algumas aulas do microfundamento de desenvolvimento web Beck-end. E algumas aulas na plataforma do youtube. Aonde foi abordado o conteúdo ASPNET MVC, Criando minha TELA BENEFICIO
 
 
@@ -87,15 +89,15 @@ Foi iniciado algumas aulas do microfundamento de desenvolvimento web Beck-end. E
 --Ler
 ![alt text](image-1.png)
 
-### FORM de Criação
-![image](img/usercap3.PNG)
-
 --Editar
 ![alt text](image-2.png)
 
 <<<<<<< HEAD
 --Delete
 ![alt text](image-3.png)
+
+
+
 
 
 
