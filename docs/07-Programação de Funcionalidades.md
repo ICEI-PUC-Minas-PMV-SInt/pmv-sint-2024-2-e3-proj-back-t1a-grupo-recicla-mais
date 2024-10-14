@@ -46,21 +46,23 @@ Registro de "usuário e/ou senha inválidos".
 
 Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os exemplos abordados pelo professor KLEBER JACQUES até a sessão de estudo: UNIDADE 2 - Tema 1 - Controle de Usuários. Iniciei a criação e a estruturação da minha tela, conforme as imagens que seguem abaixo.
 
+
+=======
 ### Tela Inicial do CRUD
 ![image](img/usercap1.PNG)
+>>>>>>> 38466cc8bd28c147734d67a49c25d6cc750fd376
 
 
+=======
 ### Criação de Tipo de Usuário
 ![image](img/usercap2.PNG)
+>>>>>>> 38466cc8bd28c147734d67a49c25d6cc750fd376
 
 
-
-### FORM de Criação
-![image](img/usercap3.PNG)
-
-
+=======
 ### Visualização de Usuários Criados na Aplicação
 ![image](img/usercap4.PNG)
+>>>>>>> 38466cc8bd28c147734d67a49c25d6cc750fd376
 
 
 ### Visualização de Usuários Criados no BD
@@ -70,6 +72,30 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 
 
 
+<<<<<<< HEAD
+## Funcionalidade: Tela "Beneficio"
+
+## Responsavel: Isabele Maria Da Silva 
+
+<<<<<<< HEAD
+Foi iniciado algumas aulas do microfundamento de desenvolvimento web Beck-end. E algumas aulas na plataforma do youtube. Aonde foi abordado o conteúdo ASPNET MVC, Criando minha TELA BENEFICIO
+
+
+--Criar
+![alt text](image.png)
+
+--Ler
+![alt text](image-1.png)
+
+### FORM de Criação
+![image](img/usercap3.PNG)
+
+--Editar
+![alt text](image-2.png)
+
+<<<<<<< HEAD
+--Delete
+![alt text](image-3.png)
 
 
 
@@ -86,6 +112,10 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 
 
 
+<<<<<<< HEAD
+
+
+=======
 
 
 
@@ -93,11 +123,7 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 
 
 
-
-
-
-
-
+>>>>>>> 38466cc8bd28c147734d67a49c25d6cc750fd376
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
