@@ -122,7 +122,7 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 
 ### Responsável: Lorena Terenzi Alves
 
-Após a conclusão dos estudos do microfundamento voltado para desenvolvimento back-en e reproduzir os exemplos disponibilizados pelço professor na aula, iniciei a estruturação da tela de cadastro de produtos, conforme imagens abaixo:
+Após a conclusão dos estudos do microfundamento voltado para desenvolvimento back-en e reprodução dos exemplos disponibilizados pelo professor nas aulaa, iniciei a estruturação da tela de cadastro de produtos, que pode ser observada nas imagens abaixo:
 
 --Index
 ![crudindex](https://github.com/user-attachments/assets/1da2a6c4-2fa5-48bb-a3e7-5381c0e1d45d)
