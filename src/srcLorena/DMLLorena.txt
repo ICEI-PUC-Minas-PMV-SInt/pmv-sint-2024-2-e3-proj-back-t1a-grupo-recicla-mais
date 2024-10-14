@@ -1,0 +1,41 @@
+-- Inserir novos produtos
+INSERT INTO [dbo].[Produtos]
+           ([Tipo]
+           ,[Qualidade]
+           ,[PontuacaoProduto])
+     VALUES
+           ('Computador',   
+           'Novo',          
+           1000)              
+GO
+
+INSERT INTO [dbo].[Produtos]
+           ([Tipo]
+           ,[Qualidade]
+           ,[PontuacaoProduto])
+     VALUES
+           ('Tablet',       
+           'Usado',        
+           200)              
+GO
+
+-- Atualizar um produto existente
+UPDATE [dbo].[Produtos]
+   SET [Tipo] = 'Celular',        
+       [Qualidade] = 'Novo',              
+       [PontuacaoProduto] = 600              
+ WHERE [Id] = 1 
+GO
+
+-- Selecionar todos os produtos
+SELECT [Id]
+      ,[Tipo]
+      ,[Qualidade]
+      ,[PontuacaoProduto]
+  FROM [dbo].[Produtos]
+GO
+
+-- Deletar um produto
+DELETE FROM [dbo].[Produtos]
+      WHERE [Id] = 1  
+GO
