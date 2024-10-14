@@ -40,10 +40,31 @@ Na tela abaixo, o usuário André não tem acesso à "Usuários", que ficou rest
 Registro de "usuário e/ou senha inválidos".
 ![image](https://github.com/user-attachments/assets/de8f596a-31ed-4d3a-8c36-83a9cc3f440e)
 
+#
+## Funcionalidade: Tela "Autenticação de Usuários"
+### Responsável: Marco Antonio de Oliveira Costa Júnior
+
+Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os exemplos abordados pelo professor KLEBER JACQUES até a sessão de estudo: UNIDADE 2 - Tema 1 - Controle de Usuários. Iniciei a criação e a estruturação da minha tela, conforme as imagens que seguem abaixo.
+
+### Tela Inicial do CRUD
+![image](img/usercap1.PNG)
+
+
+### Criação de Tipo de Usuário
+![image](img/usercap2.PNG)
 
 
 
+### FORM de Criação
+![image](img/usercap3.PNG)
 
+
+### Visualização de Usuários Criados na Aplicação
+![image](img/usercap4.PNG)
+
+
+### Visualização de Usuários Criados no BD
+![image](img/usercap5.PNG)
 
 
 
