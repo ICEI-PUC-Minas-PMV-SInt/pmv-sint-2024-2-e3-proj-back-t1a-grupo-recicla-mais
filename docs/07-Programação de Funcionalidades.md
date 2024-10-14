@@ -116,3 +116,35 @@ Foi iniciado o estudo do MF de desenvolvimento de back-end. Reproduzi todos os e
 --Deletar Agendamento
 ![image](../src/srcGeisson/img/AgendamentoDeletar.png)
 
+#
+
+## Funcionalidade: Tela "Cadastro de Produtos"
+
+### Responsável: Lorena Terenzi Alves
+
+Após a conclusão dos estudos do microfundamento voltado para desenvolvimento back-en e reproduzir os exemplos disponibilizados pelço professor na aula, iniciei a estruturação da tela de cadastro de produtos, conforme imagens abaixo:
+
+--Index
+![crudindex](https://github.com/user-attachments/assets/1da2a6c4-2fa5-48bb-a3e7-5381c0e1d45d)
+
+--Lista de Produtos
+![crudlista](https://github.com/user-attachments/assets/ba8a0048-c7e6-4a0d-8c1b-011bfb31ac04)
+
+--Cadastro de Produtos
+![crudcadastro](https://github.com/user-attachments/assets/b33657a2-d895-4b19-8978-d538938ead74)
+
+--Editar Produto
+![crudedit](https://github.com/user-attachments/assets/e1a08d2e-6def-4e78-b82c-7f58a24e1e17)
+
+--Detalhes do Produto
+![cruddetail](https://github.com/user-attachments/assets/773caca7-8182-4781-8077-1aafe11d66f8)
+
+--Deletar Produto
+![cruddel](https://github.com/user-attachments/assets/898629c6-5c22-49ee-be72-7c00c29d51de)
+
+
+
+
+
+
+
