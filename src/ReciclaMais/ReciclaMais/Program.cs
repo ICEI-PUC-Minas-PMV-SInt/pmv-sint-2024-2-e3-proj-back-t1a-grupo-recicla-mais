@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ReciclaMais.Models;
+
 namespace ReciclaMais
 {
     public class Program
@@ -12,6 +15,10 @@ namespace ReciclaMais
             // Atualizaçãio da view quando alterada.
             builder.Services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
+
+            // Configuração da conexão com o banco de dados. Injeção de dependência.
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
