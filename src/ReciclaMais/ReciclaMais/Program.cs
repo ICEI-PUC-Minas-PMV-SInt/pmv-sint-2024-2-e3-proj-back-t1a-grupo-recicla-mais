@@ -9,6 +9,10 @@ namespace ReciclaMais
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Atualizaçãio da view quando alterada.
+            builder.Services.AddRazorPages()
+                .AddRazorRuntimeCompilation();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
