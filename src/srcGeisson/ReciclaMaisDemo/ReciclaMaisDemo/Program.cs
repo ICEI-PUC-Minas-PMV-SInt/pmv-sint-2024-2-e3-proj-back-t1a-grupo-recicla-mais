@@ -9,6 +9,9 @@ namespace ReciclaMaisDemo
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Configuração do autorefresh da view quando alterada.
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
