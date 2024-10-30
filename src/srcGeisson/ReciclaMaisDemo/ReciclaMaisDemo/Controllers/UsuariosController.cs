@@ -37,5 +37,35 @@ namespace ReciclaMaisDemo.Controllers
 
             return View(usuario);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+
+            if(usuario == null)
+                return NotFound();
+
+            return View(usuario);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Usuario usuario)
+        {
+            if(id != usuario.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.Usuarios.Update(usuario);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
     }
 }
