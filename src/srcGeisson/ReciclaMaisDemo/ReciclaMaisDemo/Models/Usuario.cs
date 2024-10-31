@@ -64,6 +64,7 @@ namespace ReciclaMaisDemo.Models
         [Display(Name = "CEP")]
         public string Cep { get; set; } = null!;
 
+        [Display(Name = "Tipo de Usuário")]
         public Perfil TipoUsuario { get; set; }
     }
 }
