@@ -9,5 +9,6 @@ namespace ReciclaMaisDemo.Models
 
         // DbSets.
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Agendamento> Agendamentos { get; set; }
     }
 }
