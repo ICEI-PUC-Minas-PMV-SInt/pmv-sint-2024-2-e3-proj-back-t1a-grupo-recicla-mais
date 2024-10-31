@@ -67,5 +67,34 @@ namespace ReciclaMaisDemo.Controllers
 
             return View();
         }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+
+            if(usuario == null)
+                return NotFound();
+
+            return View(usuario);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int? id)
+        {
+            if(id == null)
+                return NotFound();
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+
+            if (usuario == null)
+                return NotFound();
+
+            _context.Usuarios.Remove(usuario);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
     }
 }
