@@ -1,8 +1,8 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+<span style="color:red">Pré-requisitos: <a href="04-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A seguir, estão descritos os componentes e o ambiente de hospedagem da aplicação ReciclaMais. Este projeto busca oferecer uma plataforma de conexão para descarte sustentável de resíduos eletrônicos, integrando cidadãos e serviços de coleta.
 
 ![Arquitetura da Solução](img/arch-back.JPG)
 
