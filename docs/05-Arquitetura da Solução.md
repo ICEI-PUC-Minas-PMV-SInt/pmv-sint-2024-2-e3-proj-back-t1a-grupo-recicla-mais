@@ -8,13 +8,16 @@ A seguir, estão descritos os componentes e o ambiente de hospedagem da aplicaç
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](img/UMLclass2.png)
+<figure>
+  <img src="img/UMLclass2.png" alt="Diagrama de Classes - Versão 2">
+  <figcaption style="text-align: center;">Diagrama de Classes - Versão 1(Etapa 2)</figcaption>
+</figure>
 
 Este diagrama de classes representa o sistema de agendamentos e coleta de produtos eletrônicos, voltado para diferentes tipos de usuários, incluindo administradores, municípes e órgãos públicos. O sistema permite o gerenciamento de produtos, agendamentos e notícias, com funcionalidades específicas para cada tipo de usuário.
 
 <figure>
   <img src="img/DiagramaClassesReciclaMais.png" alt="Diagrama de Classes - Versão 2">
-  <figcaption style="text-align: center;">Diagrama de Classes - Versão 2</figcaption>
+  <figcaption style="text-align: center;">Diagrama de Classes - Versão 2(Etapa 3)</figcaption>
 </figure>
 
 ### Classes e Atributos
@@ -96,9 +99,26 @@ Enumeração que define o estado de conservação de um item de coleta: Novo, Us
 
 ## Modelo ER
 
-![Diagrama de Classes](img/modeloer.png)
+<figure>
+  <img src="img/modeloer.png" alt="Diagrama de Classes - Versão 2">
+  <figcaption style="text-align: center;">MER - Versão 1(Etapa 2)</figcaption>
+</figure>
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+<figure>
+  <img src="img/MER ReciclaMais V2-1.png" alt="Diagrama de Classes - Versão 2">
+  <figcaption style="text-align: center;">MER - Versão 2.1(Etapa 3)</figcaption>
+</figure>
+
+Usuario é a entidade principal que armazena as informações gerais de cada usuário, incluindo atributos como Nome, Cpf, DataNascimento, Endereco, e TipoUsuario, que define se o usuário é um Administrador, OrgaoPublico, ou Municipe.
+
+Produto representa os produtos que podem ser coletados, com cada produto possuindo uma PontuacaoUnitaria.
+
+Agendamento é a entidade que permite que um Municipe realize um agendamento de coleta.
+
+Noticia representa as notícias que podem ser cadastradas no sistema, uma tarefa atribuída aos Administradores.
+
+ItemColeta representa os itens de coleta específicos de cada agendamento, associando um produto a uma quantidade e ao estado de conservação.
+
 
 ## Esquema Relacional
 
