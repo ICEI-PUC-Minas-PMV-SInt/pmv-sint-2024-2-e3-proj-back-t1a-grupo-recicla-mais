@@ -12,8 +12,12 @@ namespace ReciclaMais.Models
         [Required(ErrorMessage = "Obrigatorio adicionar o nome.")]
         public string Nome { get; set; } = null!;
 
+        [Required(ErrorMessage = "Obrigatorio adicionar uma descrição.")]
+        [Display(Name = "Descrição")]
+        public string Descricao { get; set; } = null!;
+
         [Required(ErrorMessage = "Obrigatorio adicionar a pontuação correspondente ao produto.")]
         [Display(Name = "Pontuação")]
-        public int ProntuacaoUnitaria { get; set; }
+        public int PontuacaoUnitaria { get; set; }
     }
 }
