@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReciclaMais.Models;
 
@@ -11,9 +12,11 @@ using ReciclaMais.Models;
 namespace ReciclaMais.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241112223329_002AddClassesDiagrama")]
+    partial class _002AddClassesDiagrama
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -110,6 +113,7 @@ namespace ReciclaMais.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Imagem")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Resumo")
@@ -174,6 +178,7 @@ namespace ReciclaMais.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Complemento")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
