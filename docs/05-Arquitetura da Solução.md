@@ -290,9 +290,29 @@ WHERE id = 2;
 ```
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Para o desenvolvimento da plataforma, foram escolhidas tecnologias robustas e modernas, com foco em desempenho, escalabilidade e facilidade de manutenção. As tecnologias usadas são descritas abaixo:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+### Linguagem de Programação:
+
+- C#: Utilizada para o desenvolvimento de toda a lógica de negócios e da interface de backend, com a aplicação sendo construída no framework .NET.
+
+### Frameworks:
+
+- ASP.NET Core MVC: Escolhido como o framework principal para desenvolvimento da aplicação web. Com ASP.NET Core MVC, podemos desenvolver uma aplicação baseada no padrão MVC (Model-View-Controller), que permite a separação entre a lógica de apresentação, controle e dados.
+
+- Entity Framework Core (EF Core): Usado como o ORM (Object-Relational Mapping) para facilitar a interação entre a aplicação e o banco de dados. O EF Core permite trabalhar com dados de forma mais intuitiva, mapeando as classes da aplicação para as tabelas no banco de dados e automatizando as operações CRUD.
+
+### Banco de Dados:
+
+- SQL Server: Escolhido como o banco de dados relacional para armazenar as informações da aplicação, como dados de usuários, produtos, agendamentos e outras entidades do sistema.
+
+### Ferramentas de Desenvolvimento:
+
+- Visual Studio: IDE utilizada para o desenvolvimento da aplicação ASP.NET Core, com suporte a C# e EF Core. A IDE oferece ferramentas de debug e integração com o controle de versão.
+
+- Postman: Ferramenta de teste de APIs, usada para testar e validar as rotas e endpoints do backend.
+
+- Git e GitHub: Para controle de versão e hospedagem do código, permitindo o gerenciamento do código-fonte e colaboração entre desenvolvedores.
 
 ## Hospedagem
 
