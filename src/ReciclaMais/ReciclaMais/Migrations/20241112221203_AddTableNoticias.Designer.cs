@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReciclaMais.Models;
 
@@ -11,9 +12,11 @@ using ReciclaMais.Models;
 namespace ReciclaMais.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241112221203_AddTableNoticias")]
+    partial class AddTableNoticias
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,29 +24,6 @@ namespace ReciclaMais.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("ReciclaMais.Models.Agendamento", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DataAgendamento")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Horario")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PontuacaoTotal")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Agendamentos");
-                });
 
             modelBuilder.Entity("ReciclaMais.Models.Beneficio", b =>
                 {
@@ -67,35 +47,6 @@ namespace ReciclaMais.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Beneficios");
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.ItemColeta", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("AgendamentoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EstadoConservacao")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AgendamentoId");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.ToTable("ItensColeta");
                 });
 
             modelBuilder.Entity("ReciclaMais.Models.Noticia", b =>
@@ -137,15 +88,11 @@ namespace ReciclaMais.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PontuacaoUnitaria")
+                    b.Property<int>("ProntuacaoUnitaria")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -173,8 +120,19 @@ namespace ReciclaMais.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Cnpj")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Complemento")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -183,7 +141,15 @@ namespace ReciclaMais.Migrations
                     b.Property<int>("Estado")
                         .HasColumnType("int");
 
+                    b.Property<string>("Matricula")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeFantasia")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -194,19 +160,24 @@ namespace ReciclaMais.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Pontuacao")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RazaoSocial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Rua")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sobrenome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Tipo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TipoUsuario")
-                        .HasColumnType("int");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -215,80 +186,6 @@ namespace ReciclaMais.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
-
-                    b.HasDiscriminator<int>("TipoUsuario");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.Administrador", b =>
-                {
-                    b.HasBaseType("ReciclaMais.Models.Usuario");
-
-                    b.Property<string>("NomeAdm")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("Usuarios");
-
-                    b.HasDiscriminator().HasValue(0);
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.Municipe", b =>
-                {
-                    b.HasBaseType("ReciclaMais.Models.Usuario");
-
-                    b.Property<string>("Cpf")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
-                    b.Property<DateTime>("DataNascimento")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Pontuacao")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Sobrenome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("Usuarios");
-
-                    b.HasDiscriminator().HasValue(1);
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.OrgaoPublico", b =>
-                {
-                    b.HasBaseType("ReciclaMais.Models.Usuario");
-
-                    b.Property<string>("NomeOrg")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("Usuarios");
-
-                    b.HasDiscriminator().HasValue(2);
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.ItemColeta", b =>
-                {
-                    b.HasOne("ReciclaMais.Models.Agendamento", null)
-                        .WithMany("ItensColeta")
-                        .HasForeignKey("AgendamentoId");
-
-                    b.HasOne("ReciclaMais.Models.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Produto");
-                });
-
-            modelBuilder.Entity("ReciclaMais.Models.Agendamento", b =>
-                {
-                    b.Navigation("ItensColeta");
                 });
 #pragma warning restore 612, 618
         }
