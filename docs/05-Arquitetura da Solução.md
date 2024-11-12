@@ -4,6 +4,17 @@
 
 A seguir, estão descritos os componentes e o ambiente de hospedagem da aplicação ReciclaMais. Este projeto busca oferecer uma plataforma de conexão para descarte sustentável de resíduos eletrônicos, integrando cidadãos e serviços de coleta.
 
+## Fluxo de Interação com o Sistema
+Abaixo está uma figura que representa o fluxo de interação do usuário com o sistema:
+
+- *Interface do Usuário (Front-End):* O usuário interage com a aplicação por meio de uma interface web construída com ASP.NET Core MVC. Nessa interface, o usuário pode navegar, visualizar informações, fazer agendamentos e realizar outras operações.
+
+- *Controle (ASP.NET Core MVC Controller):* As requisições do usuário são enviadas para os controladores da aplicação, onde são processadas e direcionadas para a lógica de negócios adequada.
+
+- *Banco de Dados (SQL Server):* O Entity Framework Core é responsável por comunicar a aplicação com o banco de dados SQL Server, facilitando as operações CRUD (Create, Read, Update, Delete) dentre outras.
+
+- *Resposta ao Usuário:* Após o processamento, o resultado é retornado ao controlador, que prepara a resposta e a envia para o front-end, onde é exibida ao usuário.
+
 ![Arquitetura da Solução](img/arch-back.JPG)
 
 ## Diagrama de Classes
