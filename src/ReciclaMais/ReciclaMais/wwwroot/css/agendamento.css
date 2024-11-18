@@ -1,0 +1,27 @@
+﻿/* Estilos para organizar os itens de coleta */
+.itemColeta {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os campos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+}
+
+    .itemColeta > div {
+        flex: 1; /* Cada campo ocupa espaço igual */
+    }
+
+    .itemColeta label {
+        display: block;
+        margin-bottom: 5px; /* Espaçamento entre o rótulo e o campo */
+    }
+
+/* Botão Adicionar */
+#addItemBtn {
+    margin-top: 15px;
+}
+
+/* Pontuação Total */
+#pontuacaoTotal {
+    font-weight: bold;
+    color: #007bff; /* Azul do Bootstrap */
+}

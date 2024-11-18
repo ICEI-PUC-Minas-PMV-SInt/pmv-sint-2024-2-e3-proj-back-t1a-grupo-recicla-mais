@@ -1,0 +1,140 @@
+﻿@model ReciclaMais.Models.Agendamento
+
+@{
+    ViewData["Title"] = "Criar Agendamento";
+    var produtos = ViewBag.Produtos as List<ReciclaMais.Models.Produto>;
+    var estadosConservacao = Enum.GetValues(typeof(ReciclaMais.Enuns.EstadosConservacao));
+}
+
+<h2>Criar Agendamento</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="DataAgendamento"></label>
+        <input asp-for="DataAgendamento" class="form-control" />
+        <span asp-validation-for="DataAgendamento" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Horario"></label>
+        <input asp-for="Horario" class="form-control" />
+        <span asp-validation-for="Horario" class="text-danger"></span>
+    </div>
+
+    <h3>Itens de Coleta</h3>
+    <div id="itensColetaContainer">
+        <!-- Item de Coleta Base -->
+        <div class="itemColeta">
+            <div>
+                <label>Produto</label>
+                <select name="ItensColeta[0].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+                    @foreach (var produto in produtos)
+                    {
+                        <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label>Quantidade</label>
+                <input type="number" name="ItensColeta[0].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+            </div>
+            <div>
+                <label>Estado de Conservação</label>
+                <select name="ItensColeta[0].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+                    @foreach (var estado in ViewBag.EstadosConservacao as List<EstadoConservacaoViewModel>)
+                    {
+                        <option value="@estado.Nome" data-percentual="@estado.Percentual">@estado.Nome</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label>Pontuação</label>
+                <span class="pontuacaoItem">0</span>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="addItemBtn" class="btn btn-primary">Adicionar Item</button>
+
+    <h4>Pontuação Total: <span id="pontuacaoTotal">0</span></h4>
+
+    <div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        let itemIndex = 0;
+
+        // Adicionar um novo item de coleta
+        document.getElementById("addItemBtn").addEventListener("click", function () {
+            itemIndex++;
+            const container = document.getElementById("itensColetaContainer");
+
+            const newItemHtml = `
+                                <div class="itemColeta">
+                                    <div>
+                                        <label>Produto</label>
+                                        <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+        @foreach (var produto in produtos)
+        {
+                                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+        }
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Quantidade</label>
+                                        <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+                                    </div>
+                                    <div>
+                                        <label>Estado de Conservação</label>
+                                        <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+        @foreach (var estado in estadosConservacao)
+        {
+                                                    <option value="@estado">@estado</option>
+        }
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Pontuação</label>
+                                        <span class="pontuacaoItem">0</span>
+                                    </div>
+                                </div>
+                            `;
+            container.insertAdjacentHTML("beforeend", newItemHtml);
+        });
+
+        // Atualizar pontuação de cada item e total
+        function atualizarPontuacao(element) {
+            const itemColeta = element.closest('.itemColeta');
+            const produtoSelect = itemColeta.querySelector('.produtoSelect');
+            const quantidadeInput = itemColeta.querySelector('.quantidadeInput');
+            const estadoSelect = itemColeta.querySelector('.estadoSelect');
+            const pontuacaoItem = itemColeta.querySelector('.pontuacaoItem');
+
+            // Obter pontuação base do produto
+            const pontuacaoBase = parseInt(produtoSelect.selectedOptions[0].getAttribute('data-pontuacao')) || 0;
+            const quantidade = parseInt(quantidadeInput.value) || 0;
+
+            // Obter multiplicador do estado de conservação
+            const percentual = parseFloat(estadoSelect.selectedOptions[0].getAttribute('data-percentual')) || 1;
+
+            // Calcular pontuação do item
+            const pontuacaoTotalItem = Math.round(pontuacaoBase * quantidade * percentual);
+            pontuacaoItem.textContent = pontuacaoTotalItem;
+
+            // Atualizar pontuação total
+            atualizarPontuacaoTotal();
+        }
+
+        // Função para atualizar a pontuação total (caso queira somar todas as pontuações)
+        function atualizarPontuacaoTotal() {
+            const pontuacaoItems = document.querySelectorAll('.pontuacaoItem');
+            let total = 0;
+            pontuacaoItems.forEach(item => {
+                total += parseInt(item.textContent) || 0;
+            });
+            document.getElementById("pontuacaoTotal").textContent = total;
+        }
+    </script>
+}
