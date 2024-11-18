@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ReciclaMais.Models;
 
@@ -20,6 +21,21 @@ namespace ReciclaMais
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+           //Auth
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Usuarios/Login";
+                    options.AccessDeniedPath = "/Usuarios/AccessDenied";
+                    options.SlidingExpiration = false;
+                    options.Cookie.IsEssential = true;
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+                    options.Cookie.MaxAge = null; 
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(30); 
+                });
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -35,6 +51,7 @@ namespace ReciclaMais
 
             app.UseRouting();
 
+            app.UseAuthentication(); //Auth
             app.UseAuthorization();
 
             app.MapControllerRoute(

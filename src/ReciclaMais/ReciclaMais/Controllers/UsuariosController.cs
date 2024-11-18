@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -152,5 +156,66 @@ namespace ReciclaMais.Controllers
         {
             return _context.Usuarios.Any(e => e.Id == id);
         }
+
+        // Register
+
+        // GET: Usuarios/Cadastro
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
+
+        // Login
+
+        // GET: Usuarios/Login
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        // POST: Usuarios/Login
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(string username, string password)
+        {
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                ModelState.AddModelError(string.Empty, "Username and Password are required.");
+                return View();
+            }
+
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Username == username);
+
+            if (usuario == null || !BCrypt.Net.BCrypt.Verify(password, usuario.Password))
+            {
+                ModelState.AddModelError(string.Empty, "Invalid username or password.");
+                return View();
+            }
+
+            var claims = new List<Claim>
+            {
+               new Claim(ClaimTypes.Name, usuario.Nome),
+               new Claim(ClaimTypes.Role, usuario.Tipo.ToString())
+            };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
+            ViewBag.UserName = usuario.Nome;
+
+            TempData["Message"] = $"Welcome, {usuario.Nome}!";
+            return RedirectToAction("Index", "Home");
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Usuarios");
+        }
+
     }
 }
+
