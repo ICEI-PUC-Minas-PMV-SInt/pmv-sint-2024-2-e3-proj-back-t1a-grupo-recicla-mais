@@ -10,9 +10,11 @@ namespace ReciclaMais.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a data.")]
+        [Display(Name = "Data")]
         public DateTime DataAgendamento { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o horário.")]
+        [Display(Name = "Horário")]
         public string Horario { get; set; }
 
         [Display(Name = "Pontuação Total")]
