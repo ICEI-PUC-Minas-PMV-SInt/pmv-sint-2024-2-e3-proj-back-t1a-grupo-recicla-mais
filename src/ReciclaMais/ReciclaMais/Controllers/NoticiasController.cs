@@ -5,9 +5,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ReciclaMais.Controllers
 {
+    [Authorize]
     public class NoticiasController : Controller
     {
         private readonly AppDbContext _context;
