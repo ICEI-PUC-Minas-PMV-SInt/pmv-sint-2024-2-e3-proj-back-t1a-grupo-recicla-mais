@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ReciclaMais.Enuns;
 using ReciclaMais.Models;
+using System.Text.Json;
 
 namespace ReciclaMais.Controllers
 {
@@ -48,7 +49,7 @@ namespace ReciclaMais.Controllers
         {
             // Busca os produtos do banco de dados e envia para a View
             var produtos = await _context.Produtos.ToListAsync();
-            ViewBag.Produtos = produtos; // Passa os produtos via ViewBag
+            ViewBag.Produtos = produtos;
 
             // Usa o helper para obter os percentuais
             var estadosConservacao = EstadosConservacaoHelper.Percentuais
@@ -61,7 +62,28 @@ namespace ReciclaMais.Controllers
 
             ViewBag.EstadosConservacao = estadosConservacao;
 
+            // Carregar os horários disponíveis do arquivo JSON
+            var horarios = ObterHorariosDisponiveis();
+            ViewBag.HorariosDisponiveis = horarios;
+
             return View();
+        }
+
+        private List<string> ObterHorariosDisponiveis()
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Config", "HorariosDisponiveis.json");
+
+            if (!System.IO.File.Exists(filePath))
+            {
+                // Caso o arquivo não exista, podemos definir horários padrão
+                return new List<string> { "08:00 - 10:00", "12:00 - 14:00", "16:00 - 18:00" };
+            }
+
+            var jsonContent = System.IO.File.ReadAllText(filePath);
+            var data = JsonSerializer.Deserialize<HorariosModel>(jsonContent);
+
+            // Certifique-se de que 'HorariosDisponiveis' está sendo populado corretamente
+            return data?.HorariosDisponiveis ?? new List<string>();  // Retorna uma lista vazia se for nulo
         }
 
         private double GetPercentual(ReciclaMais.Enuns.EstadosConservacao estado)
@@ -96,8 +118,9 @@ namespace ReciclaMais.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Recarrega os produtos caso ocorra erro de validação
+            // Recarrega os produtos e horários em caso de erro
             ViewBag.Produtos = await _context.Produtos.ToListAsync();
+            ViewBag.HorariosDisponiveis = ObterHorariosDisponiveis();
             return View(agendamento);
         }
 

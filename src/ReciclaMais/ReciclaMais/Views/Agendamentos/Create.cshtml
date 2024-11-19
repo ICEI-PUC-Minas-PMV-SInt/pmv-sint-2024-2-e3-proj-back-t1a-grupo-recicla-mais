@@ -9,52 +9,84 @@
 <h2>Agende a sua coleta!</h2>
 
 <form asp-action="Create" method="post">
-    <div>
-        <label asp-for="DataAgendamento"></label>
-        <input asp-for="DataAgendamento" class="form-control" />
-        <span asp-validation-for="DataAgendamento" class="text-danger"></span>
-    </div>
-    <div>
-        <label asp-for="Horario"></label>
-        <input asp-for="Horario" class="form-control" />
-        <span asp-validation-for="Horario" class="text-danger"></span>
-    </div>
+    <!-- Linha para Data e Horário -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label asp-for="DataAgendamento"></label>
+                <input asp-for="DataAgendamento" type="date" class="form-control" />
+                <span asp-validation-for="DataAgendamento" class="text-danger"></span>
+            </div>
+        </div>
 
+        <div class="col-md-2">
+            <div class="form-group">
+                <label asp-for="Horario">Horário</label>
+                <select asp-for="Horario" class="form-control">
+                    @if (ViewBag.HorariosDisponiveis != null)
+                    {
+                        foreach (var horario in ViewBag.HorariosDisponiveis)
+                        {
+                            <option value="@horario">@horario</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">Nenhum horário disponível</option>
+                    }
+                </select>
+                <span asp-validation-for="Horario" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <br />
     <h3>Itens de Coleta</h3>
     <div id="itensColetaContainer">
         <!-- Item de Coleta Base -->
         <div class="itemColeta">
-            <div>
-                <label>Produto</label>
-                <select name="ItensColeta[0].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
-                    @foreach (var produto in produtos)
-                    {
-                        <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
-                    }
-                </select>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Produto</label>
+                        <select name="ItensColeta[0].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+                            @foreach (var produto in produtos)
+                            {
+                                <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Quantidade</label>
+                        <input type="number" name="ItensColeta[0].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Estado de Conservação</label>
+                        <select name="ItensColeta[0].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+                            @foreach (var estado in ViewBag.EstadosConservacao as List<EstadoConservacaoViewModel>)
+                            {
+                                <option value="@estado.Nome" data-percentual="@estado.Percentual">@estado.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label>Quantidade</label>
-                <input type="number" name="ItensColeta[0].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
-            </div>
-            <div>
-                <label>Estado de Conservação</label>
-                <select name="ItensColeta[0].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
-                    @foreach (var estado in ViewBag.EstadosConservacao as List<EstadoConservacaoViewModel>)
-                    {
-                        <option value="@estado.Nome" data-percentual="@estado.Percentual">@estado.Nome</option>
-                    }
-                </select>
-            </div>
-            <div>
-                <label>Pontuação</label>
-                <span class="pontuacaoItem">0</span>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Pontuação</label>
+                    <span class="pontuacaoItem">0</span>
+                </div>
             </div>
         </div>
     </div>
 
     <button type="button" id="addItemBtn" class="btn btn-primary">Adicionar Item</button>
 
+    <br />
+    <br />
     <h4>Pontuação Total: <span id="pontuacaoTotal">0</span></h4>
 
     <div>
@@ -72,35 +104,41 @@
             const container = document.getElementById("itensColetaContainer");
 
             const newItemHtml = `
-                                <div class="itemColeta">
-                                    <div>
-                                        <label>Produto</label>
-                                        <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+                                        <div class="itemColeta">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
         @foreach (var produto in produtos)
         {
-                                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                                                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
         }
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label>Quantidade</label>
-                                        <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
-                                    </div>
-                                    <div>
-                                        <label>Estado de Conservação</label>
-                                        <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
         @foreach (var estado in estadosConservacao)
         {
-                                                    <option value="@estado">@estado</option>
+                                                                    <option value="@estado">@estado</option>
         }
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label>Pontuação</label>
-                                        <span class="pontuacaoItem">0</span>
-                                    </div>
-                                </div>
-                            `;
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span class="pontuacaoItem">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
             container.insertAdjacentHTML("beforeend", newItemHtml);
         });
 
