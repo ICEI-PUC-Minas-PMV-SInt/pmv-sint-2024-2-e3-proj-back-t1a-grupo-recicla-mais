@@ -114,10 +114,10 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
-        @foreach (var produto in produtos)
-        {
-                                            <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
-        }
+                                @foreach (var produto in produtos)
+                                {
+                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                                }
                                 </select>
                             </div>
                         </div>
@@ -129,10 +129,10 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
-        @foreach (var estado in estadosConservacao)
-        {
-                                            <option value="@estado">@estado</option>
-        }
+                                @foreach (var estado in estadosConservacao)
+                                {
+                                    <option value="@estado">@estado</option>
+                                }
                                 </select>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
             container.insertAdjacentHTML("beforeend", newItemHtml);
         });
 
-        // Atualizar pontuação de cada item e total
+        // Atualizar pontuação de cada item.
         function atualizarPontuacao(element) {
             const itemColeta = element.closest('.itemColeta');
             const produtoSelect = itemColeta.querySelector('.produtoSelect');
@@ -160,22 +160,18 @@
             const estadoSelect = itemColeta.querySelector('.estadoSelect');
             const pontuacaoItem = itemColeta.querySelector('.pontuacaoItem');
 
-            // Obter pontuação base do produto
             const pontuacaoBase = parseInt(produtoSelect.selectedOptions[0].getAttribute('data-pontuacao')) || 0;
             const quantidade = parseInt(quantidadeInput.value) || 0;
 
-            // Obter multiplicador do estado de conservação
             const percentual = parseFloat(estadoSelect.selectedOptions[0].getAttribute('data-percentual')) || 1;
 
-            // Calcular pontuação do item
             const pontuacaoTotalItem = Math.round(pontuacaoBase * quantidade * percentual);
             pontuacaoItem.textContent = pontuacaoTotalItem;
 
-            // Atualizar pontuação total
             atualizarPontuacaoTotal();
         }
 
-        // Função para atualizar a pontuação total (caso queira somar todas as pontuações)
+        // Função para atualizar a pontuação total.
         function atualizarPontuacaoTotal() {
             const pontuacaoItems = document.querySelectorAll('.pontuacaoItem');
             let total = 0;
@@ -185,21 +181,28 @@
             document.getElementById("pontuacaoTotal").textContent = total;
         }
 
-        // Remover item de coleta
+        // Remover item de coleta.
         function removerItem(button) {
             const itemColeta = button.closest('.itemColeta');
-            itemColeta.remove(); // Remove o item da lista
-            atualizarPontuacaoTotal(); // Atualiza a pontuação total
+            itemColeta.remove(); 
+            atualizarPontuacaoTotal(); 
         }
 
         function validarDiasPermitidos(input) {
             const dataSelecionada = new Date(input.value);
             const diaSemana = dataSelecionada.getDay();
 
-            // Verifica se o dia não é terças-feira (1) nem quintas-feira (3)
+            // Verifica se o dia não é terça-feira (1) nem quinta-feira (3).
             if (diaSemana !== 1 && diaSemana !== 3) {
-                input.value = ""; // Limpa o campo de data
-                alert("Apenas as terças-feiras e quintas-feiras são permitidas.");
+                input.value = "";
+
+                Swal.fire({
+                    title: "Data Inválida!",
+                    text: "Você só pode agendar coletas nas terças e quintas-feiras. Por favor, escolha uma data válida.",
+                    icon: "warning",
+                    confirmButtonText: "Entendido",
+                    confirmButtonColor: "#3085d6"
+                });
             }
         }
     </script>
