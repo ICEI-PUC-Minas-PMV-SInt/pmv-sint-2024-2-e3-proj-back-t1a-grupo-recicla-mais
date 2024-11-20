@@ -73,6 +73,11 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        @* <button type="button" class="btn btn-danger removeItemBtn" onclick="removerItem(this)">Remover</button> *@
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -104,41 +109,46 @@
             const container = document.getElementById("itensColetaContainer");
 
             const newItemHtml = `
-                                        <div class="itemColeta">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+                <div class="itemColeta">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
         @foreach (var produto in produtos)
         {
-                                                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                                            <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
         }
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
         @foreach (var estado in estadosConservacao)
         {
-                                                                    <option value="@estado">@estado</option>
+                                            <option value="@estado">@estado</option>
         }
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <span class="pontuacaoItem">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    `;
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger removeItemBtn" onclick="removerItem(this)">Remover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="pontuacaoItem">0</span>
+                        </div>
+                    </div>
+                </div>
+            `;
             container.insertAdjacentHTML("beforeend", newItemHtml);
         });
 
@@ -173,6 +183,13 @@
                 total += parseInt(item.textContent) || 0;
             });
             document.getElementById("pontuacaoTotal").textContent = total;
+        }
+
+        // Remover item de coleta
+        function removerItem(button) {
+            const itemColeta = button.closest('.itemColeta');
+            itemColeta.remove(); // Remove o item da lista
+            atualizarPontuacaoTotal(); // Atualiza a pontuação total
         }
     </script>
 }
