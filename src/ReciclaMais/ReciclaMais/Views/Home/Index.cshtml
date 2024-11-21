@@ -1,8 +1,28 @@
-﻿@{
+﻿@using System.Globalization
+@{
     ViewData["Title"] = "Home Page";
+
+    int horaAtual = DateTime.Now.Hour;
+
+    string saudacao = horaAtual switch
+    {
+        >= 6 and < 12 => "Bom dia",
+        >= 12 and < 18 => "Boa tarde",
+        _ => "Boa noite"
+    };
+
+    string nomeUsuario = User.Identity.Name ?? "Usuário";
+    nomeUsuario = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nomeUsuario.ToLower());
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1 class="display-4">@saudacao, @nomeUsuario!</h1>
+    }
+    else
+    {
+        <h1 class="display-4">Bem-vindo ao ReciclaMais!</h1>
+        <p>Faça login ou cadastre-se para acessar todas as funcionalidades do sistema.</p>
+    }
 </div>
