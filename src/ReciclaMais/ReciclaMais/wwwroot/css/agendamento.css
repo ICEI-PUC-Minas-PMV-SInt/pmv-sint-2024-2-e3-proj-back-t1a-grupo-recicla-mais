@@ -23,7 +23,18 @@
 /* Pontuação Total */
 #pontuacaoTotal {
     font-weight: bold;
-    color: #007bff; /* Azul do Bootstrap */
+    color: #00820b;
+}
+
+/* Pontuação Item Coleta */
+.pontuacaoItem {
+    font-weight: bold;
+    color: #00820b;
+}
+
+/* Título da lista de itens de coleta.*/
+div .tituloItensColeta {
+    font-weight: bold;
 }
 
 .form-group {

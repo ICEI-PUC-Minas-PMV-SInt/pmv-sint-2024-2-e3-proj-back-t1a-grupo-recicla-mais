@@ -47,11 +47,10 @@ namespace ReciclaMais.Controllers
         // GET: Agendamentos/Create
         public async Task<IActionResult> Create()
         {
-            // Busca os produtos do banco de dados e envia para a View
             var produtos = await _context.Produtos.ToListAsync();
             ViewBag.Produtos = produtos;
 
-            // Usa o helper para obter os percentuais
+            // Usa o helper para obter os percentuais de cada estado de conservação.
             var estadosConservacao = EstadosConservacaoHelper.Percentuais
                 .Select(kvp => new EstadoConservacaoViewModel
                 {
@@ -62,7 +61,7 @@ namespace ReciclaMais.Controllers
 
             ViewBag.EstadosConservacao = estadosConservacao;
 
-            // Carregar os horários disponíveis do arquivo JSON
+            // Carregar os horários disponíveis do arquivo JSON.
             var horarios = ObterHorariosDisponiveis();
             ViewBag.HorariosDisponiveis = horarios;
 
@@ -75,17 +74,17 @@ namespace ReciclaMais.Controllers
 
             if (!System.IO.File.Exists(filePath))
             {
-                // Caso o arquivo não exista, podemos definir horários padrão
                 return new List<string> { "08:00 - 10:00", "12:00 - 14:00", "16:00 - 18:00" };
             }
 
             var jsonContent = System.IO.File.ReadAllText(filePath);
             var data = JsonSerializer.Deserialize<HorariosModel>(jsonContent);
 
-            // Certifique-se de que 'HorariosDisponiveis' está sendo populado corretamente
-            return data?.HorariosDisponiveis ?? new List<string>();  // Retorna uma lista vazia se for nulo
+            // Retorna uma lista vazia se for nulo.
+            return data?.HorariosDisponiveis ?? new List<string>();  
         }
 
+        // Obter o percentual conforme o estado de conservação de um produto.
         private double GetPercentual(ReciclaMais.Enuns.EstadosConservacao estado)
         {
             switch (estado)
@@ -104,23 +103,30 @@ namespace ReciclaMais.Controllers
         // POST: Agendamentos/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Agendamento agendamento)
+        public async Task<IActionResult> Create([Bind("DataAgendamento,Horario,ItensColeta")] Agendamento agendamento)
         {
             if (ModelState.IsValid)
             {
-                foreach (var item in agendamento.ItensColeta)
-                {
-                    item.Id = agendamento.Id;
-                }
-
-                _context.Agendamentos.Add(agendamento);
+                _context.Add(agendamento);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
 
-            // Recarrega os produtos e horários em caso de erro
-            ViewBag.Produtos = await _context.Produtos.ToListAsync();
-            ViewBag.HorariosDisponiveis = ObterHorariosDisponiveis();
+            var produtos = await _context.Produtos.ToListAsync();
+            ViewBag.Produtos = produtos;
+            var estadosConservacao = EstadosConservacaoHelper.Percentuais
+                .Select(kvp => new EstadoConservacaoViewModel
+                {
+                    Nome = kvp.Key.ToString(),
+                    Percentual = kvp.Value
+                })
+                .ToList();
+            ViewBag.EstadosConservacao = estadosConservacao;
+
+            var horarios = ObterHorariosDisponiveis();
+            ViewBag.HorariosDisponiveis = horarios;
+
             return View(agendamento);
         }
 

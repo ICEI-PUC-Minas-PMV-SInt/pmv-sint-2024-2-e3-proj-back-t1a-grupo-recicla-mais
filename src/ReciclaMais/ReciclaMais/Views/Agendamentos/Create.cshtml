@@ -39,32 +39,32 @@
             </div>
         </div>
     </div>
-    <br />
-    <h3>Itens de Coleta</h3>
+    <hr />
+    <h4>Itens de Coleta</h4>
     <div id="itensColetaContainer">
         <!-- Item de Coleta Base -->
         <div class="itemColeta">
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label>Produto</label>
+                        <label class="tituloItensColeta">Produto</label>
                         <select name="ItensColeta[0].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
                             @foreach (var produto in produtos)
                             {
-                                <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
+                                <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria" title="@produto.Descricao">@produto.Nome</option>
                             }
                         </select>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
-                        <label>Quantidade</label>
+                        <label class="tituloItensColeta">Quantidade</label>
                         <input type="number" name="ItensColeta[0].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label>Estado de Conservação</label>
+                        <label class="tituloItensColeta">Estado de Conservação</label>
                         <select name="ItensColeta[0].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
                             @foreach (var estado in ViewBag.EstadosConservacao as List<EstadoConservacaoViewModel>)
                             {
@@ -81,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <label>Pontuação</label>
+                    <label class="tituloItensColeta">Pontuação</label>
                     <span class="pontuacaoItem">0</span>
                 </div>
             </div>
@@ -103,53 +103,66 @@
     <script>
         let itemIndex = 0;
 
-        // Adicionar um novo item de coleta
+        document.addEventListener("DOMContentLoaded", () => {
+            // Atualizar pontuação inicial dos itens de coleta.
+            document.querySelectorAll('.itemColeta').forEach(item => {
+                atualizarPontuacao(item.querySelector('.produtoSelect'));
+            });
+
+            atualizarPontuacaoTotal();
+        });
+
+        // Adicionar um novo item de coleta.
         document.getElementById("addItemBtn").addEventListener("click", function () {
             itemIndex++;
             const container = document.getElementById("itensColetaContainer");
 
             const newItemHtml = `
-                <div class="itemColeta">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
-                                @foreach (var produto in produtos)
-                                {
-                                    <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria">@produto.Nome</option>
-                                }
-                                </select>
+                    <div class="itemColeta">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="ItensColeta[${itemIndex}].ProdutoId" class="form-control produtoSelect" onchange="atualizarPontuacao(this)">
+                                    @foreach (var produto in produtos)
+                                    {
+                                        <option value="@produto.Id" data-pontuacao="@produto.PontuacaoUnitaria" title="@produto.Descricao">@produto.Nome</option>
+                                    }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
+                                    @foreach (var estado in ViewBag.EstadosConservacao as List<EstadoConservacaoViewModel>)
+                                    {
+                                        <option value="@estado.Nome" data-percentual="@estado.Percentual">@estado.Nome</option>
+                                    }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-danger removeItemBtn" onclick="removerItem(this)">X</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="number" name="ItensColeta[${itemIndex}].Quantidade" class="form-control quantidadeInput" value="1" min="1" onchange="atualizarPontuacao(this)" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <select name="ItensColeta[${itemIndex}].EstadoConservacao" class="form-control estadoSelect" onchange="atualizarPontuacao(this)">
-                                @foreach (var estado in estadosConservacao)
-                                {
-                                    <option value="@estado">@estado</option>
-                                }
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <button type="button" class="btn btn-danger removeItemBtn" onclick="removerItem(this)">X</button>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <span class="pontuacaoItem">0</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <span class="pontuacaoItem">0</span>
-                        </div>
-                    </div>
-                </div>
-            `;
+                `;
             container.insertAdjacentHTML("beforeend", newItemHtml);
+
+            // Atualizar pontuação do item recém-adicionado.
+            const newItem = container.lastElementChild;
+            atualizarPontuacao(newItem.querySelector('.produtoSelect'));
         });
 
         // Atualizar pontuação de cada item.
@@ -163,7 +176,8 @@
             const pontuacaoBase = parseInt(produtoSelect.selectedOptions[0].getAttribute('data-pontuacao')) || 0;
             const quantidade = parseInt(quantidadeInput.value) || 0;
 
-            const percentual = parseFloat(estadoSelect.selectedOptions[0].getAttribute('data-percentual')) || 1;
+            // Pegando o percentual associado ao estado de conservação.
+            const percentual = parseFloat(estadoSelect.selectedOptions[0]?.getAttribute('data-percentual')) || 1;
 
             const pontuacaoTotalItem = Math.round(pontuacaoBase * quantidade * percentual);
             pontuacaoItem.textContent = pontuacaoTotalItem;
@@ -184,10 +198,19 @@
         // Remover item de coleta.
         function removerItem(button) {
             const itemColeta = button.closest('.itemColeta');
-            itemColeta.remove(); 
-            atualizarPontuacaoTotal(); 
+            itemColeta.remove();
+            atualizarPontuacaoTotal();
         }
 
+        // Função para calcular pontuação ao carregar a página.
+        function calcularPontuacaoInicial() {
+            const produtoSelects = document.querySelectorAll('.produtoSelect');
+            produtoSelects.forEach(produtoSelect => {
+                atualizarPontuacao(produtoSelect);
+            });
+        }
+
+        // Validar dias permitidos.
         function validarDiasPermitidos(input) {
             const dataSelecionada = new Date(input.value);
             const diaSemana = dataSelecionada.getDay();
@@ -205,5 +228,9 @@
                 });
             }
         }
+
+        // Garantir que a pontuação inicial esteja atualizada ao carregar a página.
+        window.onload = calcularPontuacaoInicial;
     </script>
+
 }
