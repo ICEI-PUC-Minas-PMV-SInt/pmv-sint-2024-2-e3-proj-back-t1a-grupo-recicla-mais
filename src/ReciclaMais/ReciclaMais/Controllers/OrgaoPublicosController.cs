@@ -57,12 +57,16 @@ namespace ReciclaMais.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Hash the password before saving it to the database
+                orgaoPublico.Password = BCrypt.Net.BCrypt.HashPassword(orgaoPublico.Password);
+
                 _context.Add(orgaoPublico);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(orgaoPublico);
         }
+
 
         // GET: OrgaoPublicos/Edit/5
         public async Task<IActionResult> Edit(int? id)
