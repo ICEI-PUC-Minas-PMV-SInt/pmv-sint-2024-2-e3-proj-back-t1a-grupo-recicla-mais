@@ -1,8 +1,38 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+## Teste de Responsividade
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+### 1. Desktop (1920px x 1080px)
+A responsividade do aplicativo no desktop foi devidamente testada e está funcionando corretamente, como podemos observar nos registros a seguir:
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-23-39-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/53ebbaf4-31fb-4406-8998-7b08c4e3c0b8)
+
+![Create-ReciclaMais-GoogleChrome2024-11-2317-30-02-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b3c2c9a7-8ff7-4e2a-b461-3c0a2327f8f5)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-36-19-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/79a12a98-b905-40cb-9060-a193f69001d2)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-36-41-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/fef836bb-83dc-47af-9c48-a8887baf57fb)
+
+(adicionar gif fluxo agendamento)
+
+### 2. Tablet (768px x 1024px)
+A responsividade do aplicativo em dispositivos com a resolução 768px x 1024px foi testada e está funcionando corretamente, como podemos observar nos registros a seguir:
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-49-34-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/12c6d6eb-f116-4761-b518-5a3c3ee8d6ff)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-49-01-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/f3a9aa16-ade3-4225-8dc3-b9fc7105ef3f)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-49-52-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9613a03d-6423-4b65-b148-56decc725143)
+
+(adicionar gif fluxo agendamento)
+
+### Celular (375px x 812px)
+A responsividade do aplicativo em dispositivos com a resolução 375px x 812px foi testada e como podemos observar nos registros a seguir, precisa de alguns pequenos ajustes referentes aos botões de visualizar, editar e apagar:
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-52-48-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d57c7566-254a-41b7-bff7-11e4e3ee432c)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-53-09-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/58d80c1f-4568-480d-b33d-79442d87b8f8)
+
+![HomePage-ReciclaMais-GoogleChrome2024-11-2317-53-28-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ffaccfd6-f7f7-4ab9-a4e9-1510f2088a36)
+
+(adicionar gif fluxo agendamento)
