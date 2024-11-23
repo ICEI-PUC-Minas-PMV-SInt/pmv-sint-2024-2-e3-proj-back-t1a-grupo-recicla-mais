@@ -62,6 +62,7 @@ namespace ReciclaMais.Controllers
 
                 _context.Add(municipe);
                 await _context.SaveChangesAsync();
+                TempData["Message"] = "Cadastro realizado com sucesso!";
                 return RedirectToAction(nameof(Index));
             }
             return View(municipe);

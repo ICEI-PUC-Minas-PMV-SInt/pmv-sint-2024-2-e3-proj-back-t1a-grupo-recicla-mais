@@ -9,6 +9,20 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@if (TempData["Message"] != null)
+
+{
+    <div id="successMessage" class="alert alert-success">
+        @TempData["Message"]
+    </div>
+
+    <script type="text/javascript">
+        // Log the TempData message to the console
+        console.log("@TempData["Message"]");
+    </script>
+}
+
 <table class="table">
     <thead>
         <tr>
