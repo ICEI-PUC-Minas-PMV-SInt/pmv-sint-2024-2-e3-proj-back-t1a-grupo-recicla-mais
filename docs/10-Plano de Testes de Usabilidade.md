@@ -1,11 +1,36 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
+# Teste de Responsividade da Aplicação
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+## Requisito Associado
+**RNF-002**: O sistema deve ser responsivo e permitir o acesso via celulares e tablets.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+---
+
+## Objetivo do Teste
+Garantir que o sistema ofereça uma experiência consistente e satisfatória, independentemente do dispositivo utilizado. Este teste visa avaliar se a interface da aplicação se ajusta adequadamente a diferentes tamanhos de tela.
+
+---
+
+## Passos
+1. **Início**: Acessar a aplicação em diferentes tamanhos de telas:
+   - **Dispositivos**: Browser, Samsung Galaxy S20 Ultra e iPad Pro.
+   - **Resoluções**: 
+     - Desktop: 1920x1080.
+     - Tablets: 768x1024.
+     - Celulares: 375x812.
+2. **Ação**: Navegar pelas telas da aplicação realizando as seguintes tarefas:
+   - Fazer cadastro.
+   - Login.
+   - Realizar agendamentos.
+   - Criar notícias.
+   - Adicionar um produto.
+   - Adicionar um benefício.
+3. **Conclusão**: O sistema demonstrou boa responsividade em todos os dispositivos testados.
+
+---
+
+## Critérios de Êxito
+- Todos os elementos da interface se ajustam corretamente aos diferentes tamanhos de telas.
+- Todos os botões permanecem legíveis e acessíveis.
+- Elementos importantes, como cabeçalhos, botões e menus, permanecem fixos e acessíveis.
