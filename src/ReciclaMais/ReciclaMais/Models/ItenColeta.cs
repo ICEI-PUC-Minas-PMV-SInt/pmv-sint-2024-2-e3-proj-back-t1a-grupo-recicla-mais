@@ -11,6 +11,9 @@ namespace ReciclaMais.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o produto.")]
+        public int ProdutoId { get; set; } // Referência ao Produto por ID
+
+        [ForeignKey("ProdutoId")]
         public Produto Produto { get; set; } = null!;
 
         [Required(ErrorMessage = "Obrigatório informar a quantidade.")]
