@@ -14,7 +14,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
   <td>CT-01: Identificar o funcionamento de links da Homepage</td>
   <td>
    <ul>
-    <li>RF-01: xxx </li>
+    <li> Não associado</li>
    </ul>
   </td>
   <td>Verificar se os menus de navegação e botões estão funcionais e com o direcionamento correto.</td>
@@ -43,7 +43,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
   <td>CT-02: Conferir se o sistema permite que todos os diferentes tipos usuários realizem o cadastro</td>
   <td>
    <ul>
-    <li>RF-04: xxx </li>
+    <li>RF-011</li>
    </ul>
   </td>
   <td>Verificar se o sistema permite o cadastro de diferentes tipos de usuários, após o fornecimento de todos os campos obrigatórios para o preenchimento do cadastro.</td>
@@ -76,7 +76,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
  </td>
   <td>
    <ul>
-    <li>RF-02: xxx </li>
+    <li>RF-001</li>
    </ul>
   </td>
   <td> Validar se o sistema permite que usuários registrados realizem login com credenciais válidas.</td>
@@ -109,7 +109,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
   <td>CT-04: Verificar se o sistema possibilita que os usuários agendem a coleta de lixo eletrônico.</td>
   <td>
    <ul>
-    <li>RF-03: xxx </li>
+    <li>RF-003</li>
    </ul>
   </td>
   <td> Conferir se o sistema permite que os usuários agendem uma data e hora para a coleta dos itens listados no sistema.
@@ -146,7 +146,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
  </td>
   <td>
    <ul>
-    <li>RF-01: xxx </li>
+    <li>RF-007</li>
    </ul>
   </td>
   <td>Validar se o sistema oferece um portal de notícias para manter os usuários informados.</td>
@@ -180,7 +180,7 @@ O conteúdo detalhado de uma notícia deve ser carregado corretamente ao ser cli
   </td>
   <td>
    <ul>
-    <li>RF-01: xxx </li>
+    <li>Não Associado</li>
    </ul>
   </td>
   <td> Validar se o administrador consegue cadastrar produtos no sistema informando nome, descrição e pontuação.
@@ -222,7 +222,7 @@ O sistema deve validar os campos e exibir mensagens de erro em caso de preenchim
   </td>
   <td>
    <ul>
-    <li>RF-01: xxx </li>
+    <li>Não associado</li>
    </ul>
   </td>
   <td> Validar se o administrador consegue cadastrar benefícios no sistema informando título, descrição e pontuação de troca.
