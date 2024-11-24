@@ -14,7 +14,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir:
   <td>CT-01: Identificar o funcionamento de links da Homepage</td>
   <td>
    <ul>
-    <li> Não associado</li>
+    <li> RF-001 
+    </li>
+        <li>
+    RF-003
+    </li>
    </ul>
   </td>
   <td>Verificar se os menus de navegação e botões estão funcionais e com o direcionamento correto.</td>
