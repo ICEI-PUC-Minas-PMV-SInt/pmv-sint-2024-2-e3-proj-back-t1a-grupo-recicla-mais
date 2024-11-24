@@ -13,7 +13,7 @@ A responsividade do aplicativo no desktop foi devidamente testada e está funcio
 
 ![HomePage-ReciclaMais-GoogleChrome2024-11-2317-36-41-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/fef836bb-83dc-47af-9c48-a8887baf57fb)
 
-(adicionar gif fluxo agendamento)
+
 
 ### 2. Tablet (768px x 1024px)
 A responsividade do aplicativo em dispositivos com a resolução 768px x 1024px foi testada e está funcionando corretamente, como podemos observar nos registros a seguir:
@@ -24,7 +24,7 @@ A responsividade do aplicativo em dispositivos com a resolução 768px x 1024px 
 
 ![HomePage-ReciclaMais-GoogleChrome2024-11-2317-49-52-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9613a03d-6423-4b65-b148-56decc725143)
 
-(adicionar gif fluxo agendamento)
+
 
 ### Celular (375px x 812px)
 A responsividade do aplicativo em dispositivos com a resolução 375px x 812px foi testada e como podemos observar nos registros a seguir, precisa de alguns pequenos ajustes referentes aos botões de visualizar, editar e apagar:
@@ -35,4 +35,4 @@ A responsividade do aplicativo em dispositivos com a resolução 375px x 812px f
 
 ![HomePage-ReciclaMais-GoogleChrome2024-11-2317-53-28-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ffaccfd6-f7f7-4ab9-a4e9-1510f2088a36)
 
-(adicionar gif fluxo agendamento)
+
