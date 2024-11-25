@@ -103,18 +103,33 @@ namespace ReciclaMais.Controllers
         // POST: Agendamentos/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DataAgendamento,Horario,ItensColeta")] Agendamento agendamento)
+        public async Task<IActionResult> Create([Bind("DataAgendamento,Horario")] Agendamento agendamento, List<ItemColeta> itensColeta)
         {
             if (ModelState.IsValid)
             {
+                foreach (var item in itensColeta)
+                {
+                    // Associa o Produto ao ItemColeta pelo ProdutoId
+                    item.Produto = await _context.Produtos.FindAsync(item.ProdutoId);
+                }
+
+                // Associa os itens de coleta ao agendamento
+                agendamento.ItensColeta = itensColeta;
+
+                // Calcula a pontuação total com base nos itens de coleta
+                agendamento.PontuacaoTotal = agendamento.CalcularPontuacaoTotal();
+
+                // Adiciona o agendamento ao contexto
                 _context.Add(agendamento);
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
 
+            // Caso algo dê errado, recarrega os dados necessários para a view
             var produtos = await _context.Produtos.ToListAsync();
             ViewBag.Produtos = produtos;
+
             var estadosConservacao = EstadosConservacaoHelper.Percentuais
                 .Select(kvp => new EstadoConservacaoViewModel
                 {
