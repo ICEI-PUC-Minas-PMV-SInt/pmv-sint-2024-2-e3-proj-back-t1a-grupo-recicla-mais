@@ -34,5 +34,19 @@ Garantir que o sistema ofereça uma experiência consistente e satisfatória, in
 
 ---
 
+## Teste de Avaliação do Feedback ao Usuário
 
+### Requisito Associado:
+**RF-005**: O sistema deve emitir um aviso informando que o agendamento foi realizado com sucesso.
+
+### Objetivo do Teste:
+Garantir que o sistema informe claramente o usuário sobre o sucesso de suas ações.
+
+### Passos:
+1. Realizar um agendamento de coleta.
+2. Verificar se uma mensagem de sucesso é exibida.
+
+### Critérios de Êxito:
+- Mensagem clara e visível aparece ao final da operação.
+- O usuário consegue entender o feedback sem dificuldades.
 
