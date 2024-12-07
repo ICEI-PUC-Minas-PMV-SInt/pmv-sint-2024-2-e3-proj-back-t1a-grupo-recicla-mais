@@ -22,7 +22,7 @@ O projeto a ser desenvolvido é uma plataforma digital com a missão de intermed
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+A aplicação pode ser acessada através do link: https://reciclamais-h4bhewh5ehepc7hf.brazilsouth-01.azurewebsites.net/
 
 # Documentação
 
