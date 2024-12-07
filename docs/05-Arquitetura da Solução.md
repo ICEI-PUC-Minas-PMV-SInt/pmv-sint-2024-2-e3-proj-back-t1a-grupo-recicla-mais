@@ -327,11 +327,28 @@ Para o desenvolvimento da plataforma, foram escolhidas tecnologias robustas e mo
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+### Serviço Utilizado
+- **Azure App Service** (Plano Gratuito)
+- **Azure SQL Database** (Plano Gratuito)
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A hospedagem da aplicação foi realizada com o auxílio do Microsoft Azure, através dos passos descritos abaixo, e pode ser acessada através do link: https://reciclamais-h4bhewh5ehepc7hf.brazilsouth-01.azurewebsites.net/
+
+### Passos Realizados
+
+1. **Criação do App Service e Banco de Dados no Azure**
+
+2. **Configuração da Connection String**: 
+   - Ajuste da connection string no arquivo `appsettings.json` para conectar a aplicação ao banco de dados hospedado no Azure.
+
+3. **Permissões de Acesso ao Banco**: 
+   - Configuração da regra de firewall no banco de dados para permitir o acesso ao IP público da máquina.
+
+4. **Deploy da Aplicação**: 
+   - Realização do deploy da aplicação no Azure App Service através do Visual Studio.
+
+5. **Atualização do Banco de Dados**: 
+   - Execução do comando `Update-Database` para garantir que a estrutura do banco de dados fosse compatível com o Azure.
+
+6. **Teste de Funcionalidade**: 
+   - Verificação de que a aplicação está funcionando corretamente, com login, cadastro e demais funcionalidades operando como esperado.
+
